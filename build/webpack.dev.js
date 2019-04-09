@@ -12,7 +12,7 @@ module.exports = merge(common, {
         port: '8080',
         proxy: {
             '/api': {
-                target: 'http://10.9.0.79:8080',
+                target: 'http://miracle-miracle:8080',
                 changeOrigin: true,
                 secure: false,
             }
