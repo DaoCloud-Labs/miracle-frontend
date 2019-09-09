@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --open --config ./build/webpack.dev.js",
-    "build": "webpack --config ./build/webpack.prod.js"
+    "build": "webpack --config ./build/webpack.prod.js",
+    "cover": "node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly --"
   },
   "author": "Joan Wu <qiong.wu@daocloud.io>",
   "license": "ISC",
@@ -30,7 +31,10 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.2.1"
+    "webpack-merge": "^4.2.1",
+    "istanbul": "^0.3.6",
+    "coveralls": "^2.10.0",
+    "mocha": "~2.2.4"
   },
   "dependencies": {
     "axios": "^0.18.0"
